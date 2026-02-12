@@ -1,0 +1,28 @@
+@media screen and (min-width:769px) and (max-width:992px){
+
+/* ======= header section start ======= */
+.header-container{
+  width: 100%;
+  padding: 20px 20px;
+
+}
+
+.search-input input{
+  padding: 12px 12px;
+  width: 400px;
+}
+
+.profile-other{
+    display: none;
+}
+
+.bars{
+  display: block;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+
+}
+/* ======= header section end ======= */
+
+}

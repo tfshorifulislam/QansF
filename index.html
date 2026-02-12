@@ -8,119 +8,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&  display=swap" rel="stylesheet">
     <!-- google Icons -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- tailwind cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./tailwind.config.js">
+    <link rel="stylesheet" href="./responsive/mobile.css">
+    <link rel="stylesheet" href="./responsive/tablet-landscape.css">
+    <link rel="stylesheet" href="./responsive/tablet-portrait.css">
+    <link rel="stylesheet" href="./responsive/small-laptop.css">
 
     <title>QansF</title>
 </head>
-<body class="bg-[#181818]">
-    <header class=" h-20 max-w-full bg-[#262626] flex items-center mb-4">
-
-    <div class="header-container container flex items-center justify-between mx-auto">
-
-            
-        <div class="brand w-[92px] h-6 cursor-pointer">
-            <img src="./Images/Qansf Logo red-01.png" alt="Qansf Logo red">
-        </div>
-
-        <div class="input relative flex items-center ">
-            <input class="py-[11px] pl-[22px] pr-[214px] bg-[#181818] rounded-[8px] text-[#A0A0A0]" type="text" name="" id="" placeholder="Search QansF">
-            <i class="fa-solid fa-magnifying-glass absolute cursor-pointer text-[#A0A0A0] left-95"></i>
-        </div>
-
-        <div class="flex items-center gap-8 text-[#969696] cursor-pointer">
-            <p>Try QansF+</p>
-            <p>English <i class="fa-solid fa-angle-down"></i></p>
-            <div class="profile w-[26px] h-[26px] bg-white rounded-full">
-                
+<body>
+    <!-- ===== header section start ===== -->
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <img src="./Images/Qansf Logo red-01.png" alt="">
             </div>
-            
-            <div class="light">
-                <i class="fa-regular fa-moon"></i>
+            <div class="search-input">
+                <input type="text" name="" id="" placeholder="Search QansF">
+                <i class="fa-brands fa-sistrix"></i>
             </div>
-
-            <div class="add-q ">
-                <button class="border-none bg-red-600 text-white font-medium px-4 py-2.5 rounded-lg cursor-pointer">Add question <i class="fa-solid fa-plus"></i>
-                </button>
-            </div>
-        </div>
-
-    </div>
-    </header>
-
-    <main class="container mx-auto grid grid-cols-7 gap-4">
-
-        <aside class="text-white col-span-1 gap-10 flex flex-col">
-
-            <div class="flex items-center justify-start px-[13px] py-[9px] bg-red-600 rounded-lg cursor-pointer" >
-                <p class=" flex items-center justify-center gap-4">
-                    <i class="fa-solid fa-plus"></i>  
-                    Create Space
-                </p>
-            </div>
-
-
-            <div class="flex items-center justify-start px-[13px] py-[9px] bg-[#131313] rounded-lg cursor-pointer" >
-                <p class=" flex items-center justify-center gap-4">
-                    <i class="fa-solid fa-dice-three"></i> 
-                    Number Theory 
-                </p>
-            </div>
-
-
-            <div class="flex items-center justify-start px-[13px] py-[9px] bg-[#131313] rounded-lg cursor-pointer" >
-                <p class=" flex items-center justify-center gap-4">
-                    <i class="fa-solid fa-bug"></i>
-                    Problem Solving
-                </p>
-            </div>
-
-            
-            <div class="flex items-center justify-start px-[13px] py-[9px] bg-[#131313] rounded-lg cursor-pointer" >
-                <p class=" flex items-center justify-center gap-4">
-                    <i class="fa-solid fa-brain"></i>
-                    Mathematics
-                </p>
-            </div>
-
-
-            <div class="flex items-center justify-start px-[13px] py-[9px] bg-[#131313] rounded-lg cursor-pointer" >
-                <p class=" flex items-center justify-center gap-4">
-                    <i class="fa-brands fa-quora"></i>
-                    Knowledge
-                </p>
-            </div>
-
-            
-
-            
-        </aside>
-
-        <div class="main-post-area col-span-4 space-y-2">
-
-            <div class="post-option bg-[#262626] rounded-md">
-
-                <div class="icons flex justify-between items-center px-[20px] mx-auto h-[58px] text-white text-[24px]">
-                    <i class="fa-regular fa-house cursor-pointer"></i>
-                    <i class="fa-regular fa-rectangle-list cursor-pointer"></i>
-                    <i class="fa-solid fa-people-group cursor-pointer"></i>
-                    <i class="fa-regular fa-pen-to-square cursor-pointer"></i>
-                    <i class="fa-regular fa-bell cursor-pointer"></i>
+            <div class="profile-other">
+                <p>Try QansF+</p>
+                <p>English </p>
+                <div class="theme-icon">
+                    <i class="fa-solid fa-moon"></i>
                 </div>
 
+                <div class="profile"></div>
             </div>
-
-
-            
-
-
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-
-
-        <div class="advertisement-area bg-[#262626] h-[58px] flex justify-center items-center text-white  col-span-2 rounded-md">
-            <p>Advertisement</p>
-        </div>
-    </main>
+    </header>
+    <!-- ===== header section end ===== -->
 </body>
 </html>

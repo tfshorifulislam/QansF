@@ -1,6 +1,81 @@
-@import "tailwindcss";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #181818;
+}
 
 .font-inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+
+header{
+  max-width: 100%;
+  background-color: #262626;
+}
+
+/* ==== header section end ==== */
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px 0;
+
+}
+
+.brand img{
+  height: 25px;
+  width: 92px;
+  cursor: pointer;
+}
+
+.search-input input{
+  padding: 12px 22px;
+  background-color: #181818;
+  border: none;
+  width: 500px;
+  color: white;
+  font-size: 16px;
+  border-radius:8px ;
+}
+
+.search-input{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input i{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+
+.profile-other{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: rgb(133, 133, 133);
+  cursor: pointer;
+}
+
+.profile{
+  height:30px;
+  width: 30px;
+  background-color: rgb(134, 134, 134);
+  border-radius: 100%;
+}
+
+.bars{
+  display: none;
+}
+/* ===== header section end ==== */
