@@ -36,7 +36,7 @@ header{
 }
 
 .search-input input{
-  padding: 12px 22px;
+  padding: 12px 55px 12px 22px;
   background-color: #181818;
   border: none;
   width: 500px;
@@ -49,6 +49,7 @@ header{
   position: relative;
   display: flex;
   align-items: center;
+  
 }
 
 .search-input i{
@@ -57,6 +58,8 @@ header{
   position: absolute;
   right: 5%;
   cursor: pointer;
+  
+
 }
 
 .profile-other{
