@@ -72,13 +72,56 @@ header{
 }
 
 .profile{
-  height:30px;
-  width: 30px;
+  height:40px;
+  width: 40px;
   background-color: rgb(134, 134, 134);
   border-radius: 100%;
+  position: relative;
+  cursor: pointer;
 }
 
-.bars{
-  display: none;
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 80px; 
+    right: 0;
+    background-color:#262626;
+    height: 600px;
+    border-radius: 8px;
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    z-index: 100;
+    padding: 20px 20px;
 }
+
+.profile-name{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.151);
+  margin-bottom: 20px;
+}
+
+.profile-name h4{
+  color: white;
+  font-size: 20px;
+  margin-bottom:10px ;
+}
+
+.create-ad,
+.monetization{
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.create-ad p,
+.monetization p{
+  font-size: 16px;
+  color: white;
+}
+
+
 /* ===== header section end ==== */

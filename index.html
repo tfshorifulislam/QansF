@@ -9,8 +9,8 @@
     <!-- google Icons -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+     <script src="config.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./tailwind.config.js">
     <link rel="stylesheet" href="./responsive/mobile.css">
     <link rel="stylesheet" href="./responsive/tablet-landscape.css">
     <link rel="stylesheet" href="./responsive/tablet-portrait.css">
@@ -18,31 +18,55 @@
 
     <title>QansF</title>
 </head>
-<body>
+<body class="font-inter">
     <!-- ===== header section start ===== -->
     <header>
         <div class="header-container">
             <div class="brand">
                 <img src="./Images/Qansf Logo red-01.png" alt="">
             </div>
+
             <div class="search-input">
                 <input type="text" name="" id="" placeholder="Search QansF">
                 <i class="fa-brands fa-sistrix"></i>
             </div>
+
             <div class="profile-other">
+
                 <p>Try QansF+</p>
                 <p>English </p>
                 <div class="theme-icon">
                     <i class="fa-solid fa-moon"></i>
                 </div>
 
-                <div class="profile"></div>
             </div>
-            <div class="bars">
-                <i class="fa-solid fa-bars"></i>
+            
+            <div class="profile">
+                <div class="dropdown-menu">
+
+                    <div class="profile-name">
+                        <div class="profile">  
+                        </div>
+                        <h4>TF Shoriful Islam</h4>
+                    </div>
+
+                    <div class="create-ad">
+                        <i class="fa-brands fa-adversal"></i>
+                        <p>Create Ads</p>
+                    </div>
+
+                    <div class="monetization">
+                        <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        <p>Monetization</p>
+                    </div>
+
+                </div>
+            </div>
+
             </div>
         </div>
     </header>
     <!-- ===== header section end ===== -->
+     
 </body>
 </html>
