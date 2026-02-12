@@ -8,8 +8,13 @@
 }
 
 .search-input input{
-  padding: 12px 12px;
-  width: 200px;
+  padding: 10px 10px;
+  width: 150px;
+  font-size: 12px;
+}
+
+.search-input i{
+  font-size: 12px;
 }
 
 .profile-other{
