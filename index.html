@@ -1,72 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&  display=swap" rel="stylesheet">
+
     <!-- google Icons -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-     <script src="config.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./responsive/mobile.css">
-    <link rel="stylesheet" href="./responsive/tablet-landscape.css">
-    <link rel="stylesheet" href="./responsive/tablet-portrait.css">
-    <link rel="stylesheet" href="./responsive/small-laptop.css">
-
+    <!-- ==== setup daisyui & tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
     <title>QansF</title>
+    <!-- ==== custom css ==== -->
+    <style>
+        .font-inter {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            }
+    </style>
 </head>
-<body class="font-inter">
-    <!-- ===== header section start ===== -->
-    <header>
-        <div class="header-container">
-            <div class="brand">
-                <img src="./Images/Qansf Logo red-01.png" alt="">
-            </div>
+<body class="font-inter max-w-[480px] mx-auto overflow-hidden">
 
-            <div class="search-input">
-                <input type="text" name="" id="" placeholder="Search QansF">
-                <i class="fa-brands fa-sistrix"></i>
-            </div>
+    <header class="header-container bg-base-200 w-full sticky z">
 
-            <div class="profile-other">
+        <div class="p-5 flex items-center justify-between">
+            <img src="./Images/image_1_1771523604050.jpg" alt="" class="rounded-full h-10 w-10 cursor-pointer" id="brand">
 
-                <p>Try QansF+</p>
-                <p>English </p>
-                <div class="theme-icon">
-                    <i class="fa-solid fa-moon"></i>
-                </div>
-
-            </div>
-            
-            <div class="profile">
-                <div class="dropdown-menu">
-
-                    <div class="profile-name">
-                        <div class="profile">  
-                        </div>
-                        <h4>TF Shoriful Islam</h4>
-                    </div>
-
-                    <div class="create-ad">
-                        <i class="fa-brands fa-adversal"></i>
-                        <p>Create Ads</p>
-                    </div>
-
-                    <div class="monetization">
-                        <i class="fa-solid fa-circle-dollar-to-slot"></i>
-                        <p>Monetization</p>
-                    </div>
-
-                </div>
-            </div>
-
-            </div>
+            <i class="fa-solid fa-ellipsis text-2xl cursor-pointer"></i>
         </div>
+        
     </header>
-    <!-- ===== header section end ===== -->
-     
+
+    <!-- side bar -->
+     <div id="side-bar" class="bg-base-300 pl-5 pt-5 mr-30 min-h-screen hidden">
+        <div>
+            <ul class="flex flex-col gap-5 font-bold text-xl">
+                <li class="hover:bg-slate-500 p-3 w-[90%] rounded-full cursor-pointer hover:text-white "><a href=""><i class="fa-solid fa-circle-user"></i> Profile</a></li>
+                <li class="hover:bg-slate-500 p-3 w-[90%] rounded-full cursor-pointer hover:text-white"><a href=""> <i class="fa-solid fa-sack-dollar"></i> Monetization</a></li>
+                <li class="hover:bg-slate-500 p-3 w-[90%] rounded-full cursor-pointer hover:text-white"><a href=""><i class="fa-solid fa-user-group"></i> Communities</a></li>
+                <li class="hover:bg-slate-500 p-3 w-[90%] rounded-full cursor-pointer hover:text-white"><a href=""><i class="fa-solid fa-gear"></i> Setting</a></li>
+            </ul>
+        </div>
+     </div>
+
+
+<script src="config.js"></script>
 </body>
 </html>
