@@ -28,15 +28,16 @@
     <main class="grid grid-cols-1 md:grid-cols-12 gap-5">
 
         <!-- menu -->
-        <section class="menu md:col-span-3 md:bg-base-200 md:h-[720px] rounded-sm pt-5 md:w-full md:rounded-md">
+        <section class="menu md:col-span-3 md:bg-base-200 md:h-[720px] pt-5 w-full md:rounded-md">
 
             <!-- profile icon for small device -->
-            <div id="top-bar" class="md:hidden flex relative z-50">
-                <img src="./Images/image_1_1771523604050.jpg" alt="" id="img-avatar" class="w-14 h-14 rounded-full">
-            </div>
-
+            <div id="top-bar" class="md:hidden flex justify-between items-center relative z-50">
+                <div class="profile-avatar">
+                    <img src="./Images/image_1_1771523604050.jpg" alt="" id="img-avatar" class="w-10 h-10 rounded-full">
+                </div>
+            
                 <!-- theme icon -->
-                <div class="theme fixed top-10 right-4 md:hidden z-50">
+                <div class="theme">
                     <label class="swap swap-rotate">
                         <!-- this hidden checkbox controls the state -->
                         <input type="checkbox" class="theme-controller" value="synthwave" />
@@ -60,7 +61,7 @@
                         </svg>
                     </label>
                 </div>
-
+            </div>
 
             <!-- Bottom Navbar for Mobile -->
             <div class="fixed bottom-0 left-0 w-full bg-base-200 border-t border-gray-300 flex justify-around items-center py-2 md:hidden z-50">
